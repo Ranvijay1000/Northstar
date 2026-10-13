@@ -1,0 +1,16 @@
+{
+  "name": "class10-student-os",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node --watch server/index.mjs",
+    "test": "node tests/core.test.mjs && node tests/netlify.test.mjs && node tests/cloud-sync.test.mjs",
+    "check": "node --check public/app.js && node --check public/core.js && node --check server/index.mjs && node --check server/ai.mjs && node --check server/config.mjs && node --check netlify/functions/ai.mjs && node --check scripts/build.mjs && node --check public/auth.js && node --check public/cloud-sync.js",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

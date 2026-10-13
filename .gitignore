@@ -1,0 +1,8 @@
+node_modules/
+.env
+*.log
+
+.env.*.tmp
+
+.netlify/
+tests/artifacts/
